@@ -1,0 +1,653 @@
+@charset "utf-8";
+/* CSS Document*/
+
+/* 
+==============================================
+Simple Reset 
+==============================================
+*/
+html, body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    border-style:none;
+}
+a {
+    text-decoration: none; 
+    border: 0px
+} 
+a img {
+    text-decoration: none; 
+    border: 0px
+}
+/* 
+==============================================
+END Simple Reset 
+==============================================
+*/
+
+/* 
+==============================================
+Content Elements
+==============================================
+*/
+body {
+    font-family: 'Open Sans', sans-serif;
+     /* Fallback */
+    background-color: #061F29;
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-linear-gradient(top, #061F29 0%, #DCF4FF 100%);
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top, #061F29 0%, #DCF4FF 100%);
+    /* Opera */ 
+    background-image: -o-linear-gradient(top, #061F29 0%, #DCF4FF 100%);
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #061F29), color-stop(1, #DCF4FF));
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top, #061F29 0%, #DCF4FF 100%);
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to bottom, #061F29 0%, #DCF4FF 100%);
+}
+a {
+    text-decoration: none;
+    color: #CA2323;
+    font-weight: 700;
+}
+
+#page-wrap {
+    width: 60%;
+    margin: 40% auto 0 auto;
+    padding: 20px 60px;
+    /* Fallback */
+    background-color: #FBFBFB;
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-linear-gradient(top, #FFFFFF 0%, #EFEFEF 100%);
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top, #FFFFFF 0%, #EFEFEF 100%);
+    /* Opera */ 
+    background-image: -o-linear-gradient(top, #FFFFFF 0%, #EFEFEF 100%);
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #EFEFEF));
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #EFEFEF 100%);
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, #EFEFEF 100%);
+    border: 1px solid #f7f7f7;
+    -webkit-box-shadow: 2px 4px 10px rgba(5, 66, 62, 0.4);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    2px 4px 10px rgba(5, 66, 62, 0.4);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         2px 4px 10px rgba(5, 66, 62, 0.4);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    text-align: center;
+    text-shadow: 1px 1px rgba(255,255,255,0.8);
+}
+
+.welcome {
+    font-family: 'Niconne', cursive;
+    color: #CA2323;
+    text-shadow: 2px 4px 10px rgba(5, 66, 62, 0.4);
+    font-size: 100px;
+    width: 100%;
+    margin: 140px auto 10px auto;
+    text-align: center;
+    visibility: hidden;
+}
+
+.welcome p {
+    margin: 0px;
+    letter-spacing: -1px;
+}
+
+.wish h5 {
+    font-family: 'Niconne', cursive;
+    color: #ca2323;
+    font-size: 3em;
+    text-align: center;
+    margin:0px;
+    text-shadow: 1px 1px rgba(255,255,255,0.8);
+}
+
+.wish p {
+    font-size: 1.25em;
+    text-align: center;
+    margin-top: 10px;
+}
+/* 
+==============================================
+END Content Elements
+==============================================
+*/
+
+/* 
+==============================================
+Audio Controls
+==============================================
+*/
+audio {
+    opacity: 0;
+}
+
+/* #audio-container {
+    z-index: 3;
+    height: 30px;
+    width: 100%;
+    margin: 0px auto;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    text-align: center;
+     -webkit-box-shadow: 2px 4px 10px rgba(5, 66, 62, 0.4);  
+    -moz-box-shadow:    2px 4px 10px rgba(5, 66, 62, 0.4);  
+    box-shadow:         2px 4px 10px rgba(5, 66, 62, 0.4);  
+}
+/* 
+==============================================
+END Audio Controls
+==============================================
+*/
+
+/* 
+==============================================
+Sponsor Logos
+==============================================
+*/
+#sponsors {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+#sponsors p {
+    margin: 0;
+}
+
+#sponsors img {
+    margin: 10px;
+}
+
+.end {
+    margin-bottom: 50px;
+}
+/* 
+==============================================
+END Sponsor Logos
+==============================================
+*/
+
+/* 
+==============================================
+Charity Poll
+==============================================
+*/
+fieldset {
+	margin: 115px auto;
+	padding: 8px 15px 15px 15px;
+	border: 1px solid #ca2323;
+	display: block; /* IE 7 Requires This */
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+fieldset a:hover {
+    color: #a21c1c;
+}
+
+.poll-spinner {
+    color: #e6e6e6;
+}
+
+.charity {
+    font-size: 1.5em;
+}
+
+#legend {
+    font-family: 'Niconne', cursive;
+	font-size: 3em;
+	color: #ca2323;
+    position: relative;
+    background-color: #FBFBFB;
+    margin:-35px auto 25px auto;
+    width: 75%;
+}
+
+.btn {
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    text-shadow: 1px 1px 3px #666666;
+    color: #ffffff;
+    font-size: 32px;
+    background: #CA2323;
+    padding: 10px 20px 10px 20px;
+    border: solid #a21c1c 2px;
+    text-decoration: none;
+    font-family: 'Niconne', cursive;
+    margin: 50px auto;
+}
+
+.btn:hover {
+    background: #a21c1c;
+    text-decoration: none;
+}
+#ss-form {
+    border-bottom: 1px solid #ca2323;
+    margin: 40px 0;
+    
+}
+#ss-form ul {
+    padding: 0px;
+    list-style: none;
+    text-align: left;
+}
+#ss-form ul li {
+    margin-bottom: 25px;
+}
+
+#ss-form ul input {
+    margin-right: 15px;
+}
+/* 
+==============================================
+END Charity Poll
+==============================================
+*/
+
+/* 
+==============================================
+Share Ribbon 
+==============================================
+*/
+#share {
+    width: 325px;
+    margin: -35px auto 60% auto;
+}
+
+/* Forked Ends */
+.ribbon:after, .ribbon:before {
+    margin-top:0.5em;
+    content: "";
+    float:left;
+    border:1.5em solid #fff;
+}
+
+.ribbon:after {
+    border-right-color:transparent;
+}
+
+.ribbon:before {
+    border-left-color:transparent;
+}
+
+/* Links */
+.ribbon a:link, .ribbon a:visited { 
+    color:#CA2323;
+    text-decoration:none;
+    float:left;
+    height:3.5em;
+    overflow:hidden;
+    
+}
+
+.ribbon a:hover, .ribbon a:target { 
+    color:#fff;
+}
+
+.ribbon i {
+    margin-top: 15px;
+}
+
+/* Animated Folds */
+.ribbon span {
+    background:#fff;
+    display:inline-block;
+    line-height:3em;
+    padding:0 1em;
+    height:3em;
+    margin-top:0.5em;
+    position:relative;
+
+    -webkit-transition: background-color 0.2s, margin-top 0.2s;  /* Saf3.2+, Chrome */
+    -moz-transition: background-color 0.2s, margin-top 0.2s;  /* FF4+ */
+    -ms-transition: background-color 0.2s, margin-top 0.2s;  /* IE10 */
+    -o-transition: background-color 0.2s, margin-top 0.2s;  /* Opera 10.5+ */
+    transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.ribbon a:hover span {
+    background:#CA2323;
+    margin-top:0;
+}
+
+.ribbon span:before {
+    content: "";
+    position:absolute;
+    top:3em;
+    left:0;
+    border-right:0.5em solid #901818;
+    border-bottom:0.5em solid #fff;
+}
+
+.ribbon span:after {
+    content: "";
+    position:absolute;
+    top:3em;
+    right:0;
+    border-left:0.5em solid #9B8651;
+    border-bottom:0.5em solid #fff;
+}
+/* 
+==============================================
+END Share Ribbon 
+==============================================
+*/
+
+/* 
+==============================================
+Shapes 
+==============================================
+*/
+#circle-container{
+    width:150px;
+    margin: 0px auto;
+}
+
+.circle-text {
+    width:50%;
+    margin: 90% auto 25px auto;
+    
+    
+}
+.circle-text a {
+    color: #fff;    
+}
+
+.circle-text:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+    background: #ca2323; 
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 20px rgba(5, 66, 62, 0.8);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0 0 20px rgba(5, 66, 62, 0.8);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         0 0 20px rgba(5, 66, 62, 0.8);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.circle-text div {
+    float:left;
+    width:100%;
+    padding-top:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+    color:white;
+}
+
+.triangle-container {
+    width:99%;
+    margin:-10px auto 50% auto;
+    height:50px;
+}
+
+.triangle-down{
+    width: 50%;
+    height: 0;
+    padding-left: 50%;
+    padding-top: 50%;
+    overflow: hidden;
+}
+
+.triangle-down div {
+    width: 0; 
+    height: 0;
+    margin-left:-500px;
+    margin-top:-500px;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-top: 500px solid #f7f7f7;
+}
+
+#triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 100px;
+    border-color: #f7f7f7 transparent transparent transparent;
+    line-height: 0px;
+    _border-color: #f7f7f7 #000000 #000000 #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+/* 
+==============================================
+END Shapes
+==============================================
+*/
+
+/* 
+==============================================
+Snowfall
+==============================================
+*/
+#scene {
+    background: none;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 100%;
+    background-attachment: fixed;
+	background-image: url("../img/bg.png");
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:0;
+}
+#snow{
+	background: none;
+    overflow-x: hidden;
+    min-height: 100%;
+    background-attachment: fixed;
+	background-image: url("../img/s1.png"), url("../img/s2.png"), url("../img/s3.png");
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+  	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  	50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  	100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+@-moz-keyframes snow {
+  	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  	50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  	100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+
+@-webkit-keyframes snow {
+  	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  	50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  	100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+@-ms-keyframes snow {
+  	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  	50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  	100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
+/* 
+==============================================
+END Snowfall
+==============================================
+*/
+
+/*
+==============================================
+Animation Effects
+==============================================
+*/
+.bigEntrance{
+	animation-name: bigEntrance;
+	-webkit-animation-name: bigEntrance;	
+
+	animation-duration: 1.6s;	
+	-webkit-animation-duration: 1.6s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	visibility: visible !important;			
+}
+
+@keyframes bigEntrance {
+	0% {
+		transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+		opacity: 0.2;
+	}
+	30% {
+		transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);		
+		opacity: 1;
+	}
+	45% {
+		transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	60% {
+		transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);		
+		opacity: 1;
+	}	
+	75% {
+		transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	90% {
+		transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);		
+		opacity: 1;
+	}	
+	100% {
+		transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}		
+}
+
+@-webkit-keyframes bigEntrance {
+	0% {
+		-webkit-transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
+		opacity: 0.2;
+	}
+	30% {
+		-webkit-transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);		
+		opacity: 1;
+	}
+	45% {
+		-webkit-transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	60% {
+		-webkit-transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);		
+		opacity: 1;
+	}	
+	75% {
+		-webkit-transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}
+	90% {
+		-webkit-transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);		
+		opacity: 1;
+	}	
+	100% {
+		-webkit-transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
+		opacity: 1;
+	}				
+}
+
+.floating{
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(8%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);	
+	}
+	50% {
+		-webkit-transform: translateY(8%);	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+	}			
+}
+
+.pulse{
+	animation-name: pulse;
+	-webkit-animation-name: pulse;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		opacity: 0.7;		
+	}
+	50% {
+		transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(0.9);
+		opacity: 0.7;	
+	}			
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;		
+	}
+	50% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;	
+	}			
+}
+/*
+==============================================
+END Animation Effects
+==============================================
+*/

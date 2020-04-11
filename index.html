@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Niconne|Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <title>Happy Holidays from OneBeacon</title>
+    <meta name="description" content="OneBeacon 2014 Holiday Card">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="ie.css" />
+    <![endif]-->
+    
+    <script src="js/smoothscroll.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <div id="scene"></div>
+    
+    <div id="snow">
+         <div id="audio-container">
+            <audio controls >
+                <source src="audio/ilneige.mp3" type="audio/mpeg">
+            </audio>
+         </div>
+        
+        
+        <div class="welcome bigEntrance">
+            <p>Happy</p>
+            <p>Holidays</p>
+        </div>
+        
+        <div id="circle-container" class="floating">
+            <a href="#down">
+                <div class="circle-text">
+                    <div>
+                        <i class="fa fa-arrow-down"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <div id="page-wrap">
+                        
+            <div id="down"> </div>
+
+            <div class="triangle-container">
+                <div class="triangle-down">
+                    <div></div>
+                </div>
+            </div>
+            
+            <div class="wish">
+                <h5><a>Best wishes to you and yours this holiday season.</a></h5>
+            </div>
+         
+            <p>Once again, we will be giving back to those in need and would like your help.</p>
+            <p>Please vote to help us allocate $30,000 to three deserving nonprofits:</p>
+            
+            <div id="poll">
+                <fieldset>
+                    <p id="legend">About the Charities</p>
+                    
+                    <p><a class="charity" href="http://www.feedingamerica.org/" target="_blank"><i class="fa fa-pagelines"></i> Feeding America</a></p>
+                    <p>Our mission is to feed America's hungry through a nationwide network of member food banks and engage our country in the fight to end hunger.</p>
+                    <a href="http://www.feedingamerica.org/hunger-in-america/" target="_blank"><i class="fa fa-arrow-circle-right"></i> Learn More</a></p>
+                
+                    <p><i class="fa fa-spinner fa-spin poll-spinner"></i></p>
+                    
+                    <p><a class="charity" href="http://www.stjude.org/stjude/v/index.jsp?vgnextoid=7b22b46b476a7410VgnVCM100000290115acRCRD" target="_blank"><i class="fa fa-child"></i>  St. Jude Children's Research Hospital</a></p>
+                    <p>St. Jude is unlike any other pediatric treatment and research facility. Discoveries made here have completely changed how the world treats children with cancer and other catastrophic diseases.</p>
+                    <p><a href="http://www.stjude.org/about/" target="_blank"><i class="fa fa-arrow-circle-right"></i> Learn More</a></p>
+                    
+                    <p><i class="fa fa-spinner fa-spin poll-spinner"></i></p>
+                    
+                    <p><a class="charity" href="http://www.wreathsacrossamerica.org/" target="_blank"><i class="fa fa-cog"></i> Wreaths Across America</a></p>
+                    <p>Coordinating wreath laying ceremonies a specified Saturday in December at Arlington cemetery and other locations.</p>
+                    <p><a href="http://www.wreathsacrossamerica.org/" target="_blank"><i class="fa fa-arrow-circle-right"></i> Learn More</a></p>
+                </fieldset>
+            </div> <!-- END ID=POLL -->
+       
+            <div class="wish">
+                <h5>Cast Your Vote</h5>
+                <p>Please Select One</p>
+            </div>
+
+            <div id="ss-form">
+                <form action="https://docs.google.com/forms/d/1RB6fC_B-VuuRLFWGp6DaVeexyinA5s0teM6jj7TmzrM/formResponse" method="POST" target="_self" onsubmit="">
+                    <ul role="radiogroup" aria-label="Untitled Question  ">
+                        <li>
+                            <label>
+                                <input type="radio" name="entry.1782260081" value="Feeding America" id="group_1782260081_1" role="radio" aria-label="Feeding America"><i class="fa fa-pagelines"></i> Feeding America
+                            </label>
+                        </li> 
+
+                        <li class="space">
+                            <label>
+                                <input type="radio" name="entry.1782260081" value="St. Jude&#39;s" id="group_1782260081_2" role="radio" aria-label="St. Jude&#39;s"><i class="fa fa-child"></i>  St. Jude Children's Research Hospital
+                            </label>
+                        </li> 
+
+                        <li class="space">
+                            <label>
+                                <input type="radio" name="entry.1782260081" value="Wreaths Across America" id="group_1782260081_3" role="radio" aria-label="Wreaths Across America"><i class="fa fa-cog"></i> Wreaths Across America
+                            </label>
+                        </li>
+                    </ul>
+
+                    <input type="hidden" name="draftResponse" value="[,,&quot;-3979980075776611852&quot;]">
+                    <input type="hidden" name="pageHistory" value="0">
+                    <input type="hidden" name="fbzx" value="-3979980075776611852">
+                    <input type="submit" name="submit" value="Vote" class="btn">
+                </form>
+                
+                <script>
+                    $('#ss-form').btn(function () {
+                        sendContactForm();
+                        return false;
+                    });
+                </script>
+            </div>
+            
+            <div class="wish">
+                <h5>Thank You</h5>
+                <p>From The OneBeacon Family</p>
+            </div>
+            
+            <div id="sponsors">
+                <p>
+                    <img src="img/ob_0011_obpi.png" />
+                    <img src="img/ob_0010_specialty.png" />
+                    <img src="img/ob_0009_entertainment.png" />
+                    <img src="img/ob_0008_accident.png" />
+                </p>
+                <p>
+                    <img src="img/ob_0007_surety.png" />
+                    <img src="img/ob_0006_tech.png" />
+                    <img src="img/ob_0005_dewar.png" />
+                    <img src="img/ob_0004_government.png" />
+                </p>
+                <p>
+                    <img src="img/ob_0003_program.png" />
+                    <img src="img/ob_0002_imu.png" />
+                    <img src="img/ob_0001_environmental.png" />
+                    <img src="img/ob_0000_climate-corp.png" />
+                </p>
+            </div>
+            
+            <div class="wish end">
+                <h5>Spread the Word!</h5>
+                <p>Share with Family & Friends:</p>
+            </div>
+     </div>    
+     <div id="share">
+            <div class="ribbon">
+                <a href='#'><span><i class="fa fa-facebook"></i></span></a>
+                <a href='#'><span><i class="fa fa-twitter"></i></span></a>
+                <a href='#'><span><i class="fa fa-google"></i></span></a>
+                <a href='#'><span><i class="fa fa-linkedin"></i></span></a>
+                <a href='#'><span><i class="fa fa-envelope"></i></span></a>
+            </div>
+    </div>
+
+</body>
+</html>

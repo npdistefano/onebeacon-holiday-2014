@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document*/
+
+*, html, body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+.ie-gradient-body {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#061F29', endColorstr='#DCF4FF',GradientType=0 );
+}
+#scene {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#scene img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+#page-wrap {
+
+  border: 1px solid red;
+}
